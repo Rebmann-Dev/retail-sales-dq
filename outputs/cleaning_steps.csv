@@ -1,0 +1,7 @@
+step,rule,rows_remaining,sum_line_amount
+0,All raw line items,541909,9747747.93
+1,Exclude cancellations (invoice starts with C),532621,10644560.42
+2,Exclude remaining quantity <= 0,531285,10644560.42
+3,Exclude unit price <= 0,530104,10666684.54
+4,Exclude non-product codes (= gross sales),527761,10271433.06
+5,Sensitivity: also exclude exact duplicates,522540,10247219.32

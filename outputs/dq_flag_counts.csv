@@ -1,0 +1,8 @@
+flag,rows_flagged,pct_of_raw
+is_cancellation,9288,1.71
+missing_customer_id,135080,24.93
+missing_description,1454,0.27
+qty_nonpositive,10624,1.96
+price_nonpositive,2517,0.46
+is_non_product,2946,0.54
+is_duplicate,5268,0.97

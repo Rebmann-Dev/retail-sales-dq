@@ -1,0 +1,5 @@
+data/*.xlsx
+outputs/retail.db
+_to_delete/
+__pycache__/
+.pytest_cache/

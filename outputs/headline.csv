@@ -1,0 +1,2 @@
+raw_line_items,raw_invoices,valid_sale_lines,valid_orders,gross_sales,avg_order_value,distinct_customers,gross_sales_missing_customer,product_cancellation_lines,product_cancellation_value,sales_after_cancellations,shipping_charges,first_date,last_date
+541909,25900,527761,19773,10271433.06,519.47,4334,1510366.41,8704,478724.18,9792708.88,291401.65,2010-12-01 08:26:00,2011-12-09 12:50:00

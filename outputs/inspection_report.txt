@@ -1,0 +1,176 @@
+=== Shape and types ===
+rows: 541909 | columns: 8
+InvoiceNo              object
+StockCode              object
+Description            object
+Quantity                int64
+InvoiceDate    datetime64[ns]
+UnitPrice             float64
+CustomerID            float64
+Country                object
+
+=== Nulls per column ===
+InvoiceNo           0
+StockCode           0
+Description      1454
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     135080
+Country             0
+blank (whitespace-only) descriptions: 0
+
+=== Date range ===
+min: 2010-12-01 08:26:00 | max: 2011-12-09 12:50:00
+rows per month:
+InvoiceDate
+2010-12    42481
+2011-01    35147
+2011-02    27707
+2011-03    36748
+2011-04    29916
+2011-05    37030
+2011-06    36874
+2011-07    39518
+2011-08    35284
+2011-09    50226
+2011-10    60742
+2011-11    84711
+2011-12    25525
+Freq: M
+
+=== Invoice numbers ===
+distinct invoices: 25900
+rows with InvoiceNo starting 'C': 9288 | distinct C invoices: 3836
+rows whose InvoiceNo is not digits or C+digits: 3
+InvoiceNo
+A563185    1
+A563186    1
+A563187    1
+
+=== Quantity and UnitPrice ===
+            Quantity      UnitPrice
+count  541909.000000  541909.000000
+mean        9.552250       4.611114
+std       218.081158      96.759853
+min    -80995.000000  -11062.060000
+25%         1.000000       1.250000
+50%         3.000000       2.080000
+75%        10.000000       4.130000
+max     80995.000000   38970.000000
+Quantity <= 0: 10624 | of which C invoices: 9288
+C invoices with Quantity > 0: 0
+UnitPrice == 0: 2515 | UnitPrice < 0: 2
+Rows with UnitPrice < 0:
+       InvoiceNo StockCode      Description  Quantity         InvoiceDate  UnitPrice  CustomerID         Country
+299983   A563186         B  Adjust bad debt         1 2011-08-12 14:51:00  -11062.06         NaN  United Kingdom
+299984   A563187         B  Adjust bad debt         1 2011-08-12 14:52:00  -11062.06         NaN  United Kingdom
+Nonpositive quantity on non-C invoices, by whether CustomerID is null:
+CustomerID
+False       0
+True     1336
+Sample descriptions on non-C invoices with Quantity <= 0:
+Description
+NaN                       862
+check                     120
+damages                    45
+damaged                    42
+?                          41
+sold as set on dotcom      20
+Damaged                    14
+thrown away                 9
+Unsaleable, destroyed.      9
+??                          7
+wet damaged                 5
+damages?                    5
+ebay                        5
+smashed                     4
+missing                     3
+
+=== CustomerID ===
+missing CustomerID rows: 135080 (24.9%)
+distinct CustomerIDs: 4372
+
+=== StockCode ===
+distinct stock codes: 4070
+rows with codes NOT matching 5 digits + optional letters: 2995
+              rows                 example_description  sum_amount
+StockCode                                                         
+POST          1256                             POSTAGE   66230.640
+DOT            710                      DOTCOM POSTAGE  206245.480
+M              571                              Manual  -68674.190
+C2             144                            CARRIAGE    6986.000
+D               77                            Discount   -5696.220
+S               63                             SAMPLES   -3049.390
+BANK CHARGES    37                        Bank Charges   -7175.639
+AMAZONFEE       34                          AMAZON FEE -221520.500
+CRUK            16                     CRUK Commission   -7933.430
+DCGSSGIRL       13                     GIRLS PARTY BAG     144.430
+DCGSSBOY        11                      BOYS PARTY BAG     150.550
+gift_0001_20    10  Dotcomgiftshop Gift Voucher £20.00     167.050
+gift_0001_10     9  Dotcomgiftshop Gift Voucher £10.00      74.970
+gift_0001_30     8  Dotcomgiftshop Gift Voucher £30.00     175.530
+DCGS0003         5                 BOXED GLASS ASHTRAY       9.940
+gift_0001_50     4  Dotcomgiftshop Gift Voucher £50.00     167.560
+PADS             4          PADS TO MATCH ALL CUSHIONS       0.003
+gift_0001_40     3  Dotcomgiftshop Gift Voucher £40.00     100.700
+B                3                     Adjust bad debt  -11062.060
+DCGS0069         2               OOH LA LA DOGS COLLAR      15.790
+DCGS0070         2               CAMOUFLAGE DOG COLLAR      12.720
+DCGS0076         2        SUNJAR LED NIGHT NIGHT LIGHT      48.390
+DCGS0072         1                                None       0.000
+DCGS0074         1                                None       0.000
+DCGS0073         1                                ebay       0.000
+DCGS0071         1                                None       0.000
+DCGS0068         1                                ebay       0.000
+DCGS0067         1                                ebay       0.000
+DCGS0066P        1                                None       0.000
+DCGS0057         1                                None       0.000
+DCGS0055         1                                None       0.000
+DCGS0004         1          HAYNES CAMPER SHOULDER BAG      16.630
+m                1                              Manual       2.550
+
+=== Duplicates ===
+exact duplicate rows (all columns, excluding first occurrence): 5268
+
+=== Country ===
+distinct countries: 38
+Country
+United Kingdom          495478
+Germany                   9495
+France                    8557
+EIRE                      8196
+Spain                     2533
+Netherlands               2371
+Belgium                   2069
+Switzerland               2002
+Portugal                  1519
+Australia                 1259
+Norway                    1086
+Italy                      803
+Channel Islands            758
+Finland                    695
+Cyprus                     622
+Sweden                     462
+Unspecified                446
+Austria                    401
+Denmark                    389
+Japan                      358
+Poland                     341
+Israel                     297
+USA                        291
+Hong Kong                  288
+Singapore                  229
+Iceland                    182
+Canada                     151
+Greece                     146
+Malta                      127
+United Arab Emirates        68
+European Community          61
+RSA                         58
+Lebanon                     45
+Lithuania                   35
+Brazil                      32
+Czech Republic              30
+Bahrain                     19
+Saudi Arabia                10
