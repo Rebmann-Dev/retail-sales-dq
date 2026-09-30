@@ -11,6 +11,11 @@ Streamlit dashboard shows the results alongside a data-quality summary.
 4. How do the cleaning rules change the reported results?
 
 Findings are in [FINDINGS.md](FINDINGS.md).
+## Dashboard
+
+<img width="1146" height="776" alt="Screenshot 2026-09-29 at 4 52 34 PM" src="https://github.com/user-attachments/assets/8748330b-a73e-4e2b-a76e-2bcd34e16e4d" />
+<img width="1143" height="764" alt="Screenshot 2026-09-29 at 4 53 19 PM" src="https://github.com/user-attachments/assets/0ede4b2f-8d7a-453a-8945-81add4ff527a" />
+<img width="1150" height="774" alt="Screenshot 2026-09-29 at 4 53 39 PM" src="https://github.com/user-attachments/assets/7fdd8919-17ca-4087-b22b-a4faf8961c6e" />
 
 ## Data source
 
